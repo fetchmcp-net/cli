@@ -68,7 +68,8 @@ Requests and your key only ever go to the base URL, never to a server named in t
 ## Links
 
 - [fetchmcp.net](https://fetchmcp.net)
-- [Docs](https://fetchmcp.net/docs)
+- [CLI docs](https://fetchmcp.net/docs/cli)
+- [API docs](https://fetchmcp.net/docs)
 - [API spec](https://livewebdata.com/openapi.json)
 
 ## License

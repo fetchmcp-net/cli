@@ -3,7 +3,7 @@
   "tagline": "Fetch MCP setup, client by client, checked and dated.",
   "domain": "fetchmcp.net",
   "bin": "fetchmcp",
-  "npm": "fetchmcp",
+  "npm": "@fetchmcp-net/cli",
   "org": "fetchmcp-net",
   "repo": "cli",
   "siteUrl": "https://fetchmcp.net",

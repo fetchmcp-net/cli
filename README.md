@@ -8,8 +8,8 @@ It is the command line client for the [Live Web Data API](https://fetchmcp.net) 
 ## Quick start
 
 ```bash
-npx fetchmcp login                                   # paste your API key (not echoed)
-npx fetchmcp fetch https://example.com -o text       # the page as Markdown
+npx @fetchmcp-net/cli login                                   # paste your API key (not echoed)
+npx @fetchmcp-net/cli fetch https://example.com -o text       # the page as Markdown
 ```
 
 Get a key at [fetchmcp.net](https://fetchmcp.net). Node.js 18 or later.
@@ -17,7 +17,7 @@ Get a key at [fetchmcp.net](https://fetchmcp.net). Node.js 18 or later.
 ## Install
 
 ```bash
-npm install -g fetchmcp
+npm install -g @fetchmcp-net/cli
 fetchmcp --help
 ```
 

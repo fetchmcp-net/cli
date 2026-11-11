@@ -22,7 +22,7 @@
     "url": "git+https://github.com/fetchmcp-net/cli.git"
   },
   "license": "MIT",
-  "author": "Teneo Labs Inc.",
+  "author": "fetchmcp.net",
   "type": "module",
   "bin": {
     "fetchmcp": "bin/cli.js"

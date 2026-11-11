@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "fetchmcp": {
+      "type": "http",
+      "url": "https://fetchmcp.net/mcp",
+      "headers": {
+        "Authorization": "Bearer ${FETCHMCP_API_KEY}"
+      }
+    }
+  }
+}

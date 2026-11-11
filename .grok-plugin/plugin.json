@@ -1,0 +1,19 @@
+{
+  "name": "fetchmcp",
+  "version": "0.1.0",
+  "description": "Fetch public web pages live as clean Markdown, text or HTML through the FetchMCP API: its remote MCP server and the fetchmcp CLI.",
+  "author": {
+    "name": "FetchMCP",
+    "url": "https://fetchmcp.net"
+  },
+  "homepage": "https://fetchmcp.net",
+  "repository": "https://github.com/fetchmcp-net/cli",
+  "license": "MIT",
+  "keywords": [
+    "fetchmcp",
+    "web-fetch",
+    "markdown",
+    "mcp",
+    "cli"
+  ]
+}

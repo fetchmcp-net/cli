@@ -1,0 +1,17 @@
+{
+  "name": "fetchmcp",
+  "owner": {
+    "name": "FetchMCP",
+    "url": "https://fetchmcp.net"
+  },
+  "metadata": {
+    "description": "The FetchMCP plugin: FetchMCP API MCP server and skill."
+  },
+  "plugins": [
+    {
+      "name": "fetchmcp",
+      "source": "./",
+      "description": "Fetch public web pages live as clean Markdown, text or HTML through the FetchMCP API: its remote MCP server and the fetchmcp CLI."
+    }
+  ]
+}

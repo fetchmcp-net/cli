@@ -36,6 +36,35 @@ fetchmcp fetch --help                                           # every option, 
 A fetch that is still running after about 100 seconds is collected automatically with the same
 `Idempotency-Key`, so it is charged once.
 
+## MCP server
+
+The FetchMCP API is also a remote MCP server (Streamable HTTP) at `https://fetchmcp.net/mcp`, with the tools
+`get_page_contents` and `get_account_status`. It takes the same API key as a bearer token.
+
+```bash
+claude mcp add --transport http fetchmcp https://fetchmcp.net/mcp \
+  --header "Authorization: Bearer $FETCHMCP_API_KEY"
+```
+
+Any other client: URL `https://fetchmcp.net/mcp`, header `Authorization: Bearer <key>`. Config for Cursor, VS Code and
+Claude Desktop: [MCP docs](https://fetchmcp.net/docs/mcp). The server's entry for the MCP Registry is [server.json](server.json)
+(`net.fetchmcp/fetchmcp`).
+
+## Agent plugin and skill
+
+This repo is also a plugin for Claude Code, Grok Build and Gemini CLI, and holds an agent skill. Each one connects the
+MCP server above and teaches the agent when to fetch a page with it or with `fetchmcp`.
+
+```bash
+npx skills add fetchmcp-net/cli                                    # the skill, for any agent that reads SKILL.md
+claude plugin marketplace add fetchmcp-net/cli && claude plugin install fetchmcp@fetchmcp
+gemini extensions install https://github.com/fetchmcp-net/cli
+```
+
+Network and credentials: the plugin calls `https://fetchmcp.net/mcp` only, and the CLI `https://fetchmcp.net/api` and
+`https://fetchmcp.net/openapi.json`. Both need one credential, your FetchMCP API key, read from `FETCHMCP_API_KEY`. No hooks, no
+scripts run on install.
+
 ## The commands follow the live API
 
 `fetchmcp` builds its commands and options from the API's OpenAPI document at

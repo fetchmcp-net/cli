@@ -1,0 +1,21 @@
+{
+  "name": "fetchmcp",
+  "version": "0.1.0",
+  "description": "Fetch public web pages live as clean Markdown, text or HTML through the FetchMCP API: its remote MCP server and the fetchmcp CLI.",
+  "mcpServers": {
+    "fetchmcp": {
+      "httpUrl": "https://fetchmcp.net/mcp",
+      "headers": {
+        "Authorization": "Bearer ${FETCHMCP_API_KEY}"
+      }
+    }
+  },
+  "settings": [
+    {
+      "name": "API key",
+      "description": "Your FetchMCP API key, from https://fetchmcp.net",
+      "envVar": "FETCHMCP_API_KEY",
+      "sensitive": true
+    }
+  ]
+}

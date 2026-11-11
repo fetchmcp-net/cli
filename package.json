@@ -1,7 +1,7 @@
 {
   "name": "@fetchmcp-net/cli",
   "version": "0.1.3",
-  "description": "FetchMCP CLI: live web pages as clean Markdown, text or HTML in your terminal, through the Live Web Data API. The commands follow the live API spec.",
+  "description": "FetchMCP CLI: live web pages as clean Markdown, text or HTML in your terminal, through the FetchMCP API. The commands follow the live API spec.",
   "keywords": [
     "cli",
     "web-scraping",
@@ -10,7 +10,6 @@
     "ai-agents",
     "rag",
     "mcp",
-    "live-web-data",
     "fetchmcp"
   ],
   "homepage": "https://fetchmcp.net",

@@ -8,7 +8,8 @@
   "repo": "cli",
   "siteUrl": "https://fetchmcp.net",
   "docsUrl": "https://fetchmcp.net/docs",
-  "apiName": "Live Web Data API",
-  "apiBaseUrl": "https://livewebdata.com/api",
-  "specUrl": "https://livewebdata.com/openapi.json"
+  "apiName": "FetchMCP API",
+  "envPrefix": "FETCHMCP",
+  "apiBaseUrl": "https://fetchmcp.net/api",
+  "specUrl": "https://fetchmcp.net/openapi.json"
 }

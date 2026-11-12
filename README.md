@@ -61,9 +61,10 @@ claude plugin marketplace add fetchmcp-net/cli && claude plugin install fetchmcp
 gemini extensions install https://github.com/fetchmcp-net/cli
 ```
 
-Network and credentials: the plugin calls `https://fetchmcp.net/mcp` only, and the CLI `https://fetchmcp.net/api` and
-`https://fetchmcp.net/openapi.json`. Both need one credential, your FetchMCP API key, read from `FETCHMCP_API_KEY`. No hooks, no
-scripts run on install.
+Network and credentials: the plugin calls `https://fetchmcp.net/mcp` only. The CLI calls `https://fetchmcp.net/api` and
+`https://fetchmcp.net/openapi.json`, and `https://registry.npmjs.org` (`npx` and a once-a-day update check, off with
+`FETCHMCP_NO_UPDATE_NOTIFIER=1`). Both need one credential, your FetchMCP API key,
+read from `FETCHMCP_API_KEY` or saved by `fetchmcp login`. No hooks, no scripts run on install.
 
 ## The commands follow the live API
 

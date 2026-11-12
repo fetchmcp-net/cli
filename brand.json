@@ -1,6 +1,5 @@
 {
   "name": "FetchMCP",
-  "tagline": "Fetch MCP setup, client by client, checked and dated.",
   "domain": "fetchmcp.net",
   "bin": "fetchmcp",
   "npm": "@fetchmcp-net/cli",

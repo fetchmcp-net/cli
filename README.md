@@ -1,7 +1,5 @@
 # FetchMCP CLI
 
-Fetch MCP setup, client by client, checked and dated.
-
 `fetchmcp` fetches live web pages as clean Markdown, text or HTML, straight from your terminal or your agent's shell.
 It is the command line client for the [FetchMCP API](https://fetchmcp.net).
 
